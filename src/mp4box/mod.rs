@@ -93,6 +93,7 @@ pub(crate) mod stsd;
 pub(crate) mod stss;
 pub(crate) mod stsz;
 pub(crate) mod stts;
+pub(crate) mod styp;
 pub(crate) mod tfdt;
 pub(crate) mod tfhd;
 pub(crate) mod tkhd;
@@ -137,6 +138,7 @@ pub use stsd::StsdBox;
 pub use stss::StssBox;
 pub use stsz::StszBox;
 pub use stts::SttsBox;
+pub use styp::StypBox;
 pub use tfdt::TfdtBox;
 pub use tfhd::TfhdBox;
 pub use tkhd::TkhdBox;
@@ -184,6 +186,7 @@ macro_rules! boxtype {
 
 boxtype! {
     FtypBox => 0x66747970,
+    StypBox => 0x73747970,
     MvhdBox => 0x6d766864,
     MfhdBox => 0x6d666864,
     FreeBox => 0x66726565,
